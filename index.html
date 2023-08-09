@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@300;400;500;700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="background"></div>
+      <form>
+        <div class="exit">
+          <div>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </div>
+        <h1>Overall rating</h1>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <p>Click to rate</p>
+
+        <section>
+          <label for="review">Review title</label>
+          <input
+            type="text"
+            name="review"
+            id="review"
+            placeholder="Example: Easy to use"
+          />
+        </section>
+
+        <section>
+          <p class="question">Would you recommend this product to a friend?</p>
+          <div class="radio">
+            <div>
+              <input type="radio" name="yes" id="yes" checked />
+              <label for="yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" name="no" id="no" />
+              <label for="no">No</label>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <label for="product-review">Product review</label>
+          <textarea
+            name="product-review"
+            id="product-review"
+            placeholder="Example: Since I bought this a month ago, it has been used a lot. What I like best is that I can use it whenever I like."
+          ></textarea>
+        </section>
+
+        <!-- details -->
+        <section>
+          <div class="details">
+            <div class="details__nickname">
+              <label for="nickname">Nickname</label>
+              <input
+                type="text"
+                name="nickname"
+                id="nickname"
+                placeholder="Example: bob27"
+              />
+            </div>
+            <div class="details__email">
+              <label for="email">Email address (will not be published)</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Example: you@email.com"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- terms -->
+        <section>
+          <div class="terms">
+            <input type="checkbox" name="accept" id="accept" />
+            <label for="accept"
+              >I accept the <a href="">terms and conditions</a></label
+            >
+          </div>
+        </section>
+        <!-- notice -->
+        <section>
+          <p class="notice">
+            You will be able to receive emails in connection with this
+            review(e.g if others comment on your review). All emails contain the
+            option to unsubscribe. We can use the text and star rating from your
+            review in other marketing.
+          </p>
+        </section>
+        <!-- button -->
+        <button type="submit">Submit product review</button>
+      </form>
+    </div>
+  </body>
+</html>
